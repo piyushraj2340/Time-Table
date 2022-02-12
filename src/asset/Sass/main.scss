@@ -1,0 +1,138 @@
+@import "variable";
+@import "mixin";
+@import "extend";
+
+@media (min-width: $desktop-view-size) {
+    $scrollBarTrackImage: linear-gradient(to left, $primary-color4, $primary-color3, $primary-color1, $primary-color6, $primary-color2,$primary-color3-hover, $primary-color5);
+    $scrollBarThumbImage: linear-gradient(to left, $theme-color-background,$theme-color-text,$primary-color5);
+    $scrollBarThumbHoverImage: linear-gradient(to bottom, $primary-color5,$theme-color-text,$theme-color-background);
+    $thumbRadius: 4px;
+    @include scrollEffect(10px,$scrollBarTrackImage,$scrollBarThumbImage,$thumbRadius,$scrollBarThumbHoverImage);
+}
+
+
+@font-face {
+    font-family: Algerian;
+    src: url(../Font/Algerian.ttf);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    @include flex-view(row);
+    @include center-alignment;
+    width: 100%;
+    height: 100vh;
+    background-color: $theme-color-background;
+    color: $theme-color-text;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    // border: 1px solid red;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+
+    @media (min-width: $desktop-view-size) {
+        width: 90%;
+        height: 95%;
+    }
+
+    .container {
+        width: 100%;
+        height: 100%;
+        @include flex-view(column);
+        @include center-alignment;
+        // border: 1px solid forestgreen;
+
+        .content-title {
+            @include flex-view(row);
+            @include center-alignment;
+
+            color: $primary-color4;
+            font: {
+                family: Algerian;
+                size: 36px;
+            }
+            letter-spacing: 4px;
+            word-spacing: 4px;
+            text-shadow: 0px 0px 9px rgba(29,51,158,1);
+            filter: drop-shadow(0px 0px 4.5px rgba(255,255,255,0.5));
+        }
+    
+        .content-body {
+            @include flex-view(row);
+            width: 100%;
+            overflow-x: auto;
+            overflow-y: auto;
+            
+            
+
+            .flex-vertical {
+                @include flex-view(column);
+                    
+                .time-table-title {
+                    @include flex-view(row);
+                    @include center-alignment;
+                    position: sticky;
+                    top: 0;
+                    border: 1px solid firebrick;
+                    background-color: $primary-color1;
+                    text-align: center;
+                    height: 6vh;
+                    padding: 8px 0;
+                    border: {
+                        width: 1px;
+                        style: solid;
+                        color: $border-color;
+                    };
+                }
+
+                .time-table-content {
+                    @include flex-view(column);
+
+                    background-color: $primary-color2;
+
+                    .content-box {
+                        @include flex-view(row);
+                        @include center-alignment;
+                        height: 210px;
+                        @media (min-width: $desktop-view-size) {
+                            height: 130px;
+                        }
+                        text-align: center;
+                        border: {
+                            width: 1px;
+                            style: solid;
+                            color: $border-color;
+                        };
+
+                        a {
+                            @include flex-view(row);
+                            @include center-alignment;
+                            @include anchor;
+                            color: $primary-color6;
+                            height: 100%;
+                        }
+                    }
+                    .active {
+                        background-color: $primary-color3;
+                    }
+
+                    .active:hover a {
+                        background-color: $primary-color3-hover;
+                        color: $theme-color-text;
+                    }
+                }
+            }
+    
+        }
+    }
+}
+

@@ -1,0 +1,38 @@
+@mixin flex-view($direction) {
+    display: flex;
+    flex-direction: $direction;
+}
+
+@mixin center-alignment {
+    justify-content: center;
+    align-items: center; 
+
+}
+
+@mixin anchor {
+    @include center-alignment;
+    text-decoration: none;
+    border-radius: 6px;
+    padding: 0 20px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+@mixin scrollEffect($scrollBarWidth,$scrollBarTrackImage,$scrollBarThumbImage,$thumbRadius,$scrollBarThumbHoverImage) {
+    ::-webkit-scrollbar {
+        width: $scrollBarWidth;
+    }
+    ::-webkit-scrollbar-track {
+        background-image: $scrollBarTrackImage;
+        border-radius: $thumbRadius;
+    }
+    ::-webkit-scrollbar-thumb {
+        background-image: $scrollBarThumbImage;
+        border-radius: $thumbRadius;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background-image: $scrollBarThumbHoverImage;
+    }
+
+}
