@@ -1,0 +1,8 @@
+{
+  "short_name": "Time Table",
+  "name": "Collage Time Table: Easy to navigate current class on time table and login.",
+  "start_url": "null",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
