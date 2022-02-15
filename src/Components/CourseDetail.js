@@ -233,8 +233,9 @@ const CourseDetail = ({daysComponent, day}) => {
                 if(day == 6) { 
                     updateNextClassTiming(setNextClassDay(2)); // next class timing is at monday 9h:40m:00s
                     // updateNextTimeOut(Number(nextClassTiming ) - Number(d));
-                } else {
-                    updateNextClassTiming (setNextClassDay(1)); // next class timing is next day at 9h:40m:00s
+                } 
+                else {
+                    updateNextClassTiming(setNextClassDay(1)); // next class timing is next day at 9h:40m:00s
                     // updateNextTimeOut(Number(nextClassTiming ) - Number(d));
                 }
             }
@@ -251,10 +252,12 @@ const CourseDetail = ({daysComponent, day}) => {
                 if(day == 6) { 
                     updateNextClassTiming(setNextClassDay(2)); // next class timing is at monday 9h:40m:00s
                     // updateNextTimeOut(Number(nextClassTiming ) - Number(d));
-                } else {
-                    updateNextClassTiming(setNextClassDay(1)); // next class timing is next day at 9h:40m:00s
-                    // updateNextTimeOut(Number(nextClassTiming ) - Number(d));
-                }
+                } 
+                // we need not need the else part 
+                // else {
+                //     updateNextClassTiming(setNextClassDay(1)); // next class timing is next day at 9h:40m:00s
+                //     // updateNextTimeOut(Number(nextClassTiming ) - Number(d));
+                // }
             }
 
             // upcoming class time 
