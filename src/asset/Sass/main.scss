@@ -76,13 +76,14 @@ main {
 
             .flex-vertical {
                 @include flex-view(column);
+                position: relative;
+                top: 0;
                     
                 .time-table-title {
                     @include flex-view(row);
                     @include center-alignment;
                     position: sticky;
                     top: 0;
-                    border: 1px solid firebrick;
                     background-color: $primary-color1;
                     text-align: center;
                     height: 6vh;
