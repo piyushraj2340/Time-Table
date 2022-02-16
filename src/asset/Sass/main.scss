@@ -104,6 +104,8 @@ main {
                         @include flex-view(row);
                         @include center-alignment;
                         height: 210px;
+                        color: $primary-color6;
+                        font-weight: 600;
                         @media (min-width: $desktop-view-size) {
                             height: 130px;
                         }
@@ -118,8 +120,9 @@ main {
                             @include flex-view(row);
                             @include center-alignment;
                             @include anchor;
-                            color: $primary-color6;
                             height: 100%;
+                            color:$primary-color7;
+                            font-weight: 500;
                         }
                     }
                     .active {

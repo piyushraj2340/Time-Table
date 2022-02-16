@@ -344,7 +344,7 @@ const CourseDetail = ({daysComponent, day}) => {
             return elem.teacherCode == name.teacherCode;
         });
         return(
-            <div key={elem.id} className={`content-box ${(elem.id === activeLectureNo)?activeStatus:''}`}>
+            <div key={elem.id} className={`content-box ${(elem.id === activeLectureNo)?`${activeStatus} txt-strong`:''}`}>
                 <a href={(elem.id === activeLectureNo)? courseName[0].link : "#"}>
                     {courseName[0].courseName} ({elem.courseCode}) || {teacherName[0].teacherName} ({elem.teacherCode}) || {elem.section}
                 </a>
