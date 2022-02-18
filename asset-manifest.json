@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/Time-Table/static/css/main.b6ce9005.css",
-    "main.js": "/Time-Table/static/js/main.936e1573.js",
+    "main.css": "/Time-Table/static/css/main.f017f568.css",
+    "main.js": "/Time-Table/static/js/main.72ca2e1f.js",
     "static/media/Algerian.ttf": "/Time-Table/static/media/Algerian.0e3406c6bf435307ed2b.ttf",
     "index.html": "/Time-Table/index.html",
-    "main.b6ce9005.css.map": "/Time-Table/static/css/main.b6ce9005.css.map",
-    "main.936e1573.js.map": "/Time-Table/static/js/main.936e1573.js.map"
+    "main.f017f568.css.map": "/Time-Table/static/css/main.f017f568.css.map",
+    "main.72ca2e1f.js.map": "/Time-Table/static/js/main.72ca2e1f.js.map"
   },
   "entrypoints": [
-    "static/css/main.b6ce9005.css",
-    "static/js/main.936e1573.js"
+    "static/css/main.f017f568.css",
+    "static/js/main.72ca2e1f.js"
   ]
 }
