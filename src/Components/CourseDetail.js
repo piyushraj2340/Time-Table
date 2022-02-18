@@ -247,13 +247,17 @@ const CourseDetail = ({daysComponent, day}) => {
                 updateActiveLectureNo(null);
                 updateActiveStatus('');
                 updateActiveLectureEndTime(null);
+                
+                if(day == 6)
+                updateNextClassTiming(classTime._3rd[0])
+
 
                 // if day == 6 == saturday the addDay[2] --> sunday --> monday
-                if(day == 6) { 
-                    updateNextClassTiming(setNextClassDay(2)); // next class timing is at monday 9h:40m:00s
-                    // updateNextTimeOut(Number(nextClassTiming ) - Number(d));
-                } 
-                // we need not need the else part 
+                // if(day == 6) { 
+                //     updateNextClassTiming(setNextClassDay(2)); // next class timing is at monday 9h:40m:00s
+                //     updateNextTimeOut(Number(nextClassTiming ) - Number(d));
+                // } 
+                // //we need not need the else part 
                 // else {
                 //     updateNextClassTiming(setNextClassDay(1)); // next class timing is next day at 9h:40m:00s
                 //     // updateNextTimeOut(Number(nextClassTiming ) - Number(d));
@@ -343,6 +347,11 @@ const CourseDetail = ({daysComponent, day}) => {
         const teacherName = Teachers.filter((name) => {
             return elem.teacherCode == name.teacherCode;
         });
+
+        if(elem.id === activeLectureNo) {
+            window.open(courseName[0].link)
+        }
+
         return(
             <div key={elem.id} className={`content-box ${(elem.id === activeLectureNo)?`${activeStatus} txt-strong`:''}`}>
                 <a href={(elem.id === activeLectureNo)? courseName[0].link : "#"}>
