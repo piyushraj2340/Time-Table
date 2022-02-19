@@ -90,6 +90,7 @@ const CourseDetail = ({daysComponent, day}) => {
     const [minutes, updateMinutes] = useState(null);
     const [seconds, updateSeconds] = useState(null);
     const [dateAndTime, updateDateAndTime] = useState('');
+    const [activeLinkStatus, updateActiveLinkStatus] = useState(true);
 
     
 
@@ -348,8 +349,9 @@ const CourseDetail = ({daysComponent, day}) => {
             return elem.teacherCode == name.teacherCode;
         });
 
-        if(elem.id === activeLectureNo) {
+        if((elem.id === activeLectureNo) && activeLinkStatus) {
             window.open(courseName[0].link)
+            updateActiveLinkStatus(false);
         }
 
         return(
