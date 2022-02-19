@@ -61,7 +61,7 @@ const TimeTable = () => {
                         <span className='txt-strong'>Friday</span>
                     </div>
                     <div className='time-table-content'>
-                    <CourseDetail daysComponent={Friday} day={6}/>
+                    <CourseDetail daysComponent={Friday} day={5}/>
                     </div>
                 </div>
                 <div className='saturday flex-vertical'>
