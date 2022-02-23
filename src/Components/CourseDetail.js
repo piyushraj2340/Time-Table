@@ -114,6 +114,7 @@ const CourseDetail = ({daysComponent, day}) => {
                 updateActiveStatus('');
                 updateActiveLectureEndTime(null);
                 updateNextClassTiming (classTime._2nd[0]);
+                updateActiveLinkStatus(false);
                 // updateNextTimeOut(Number(nextClassTiming ) - Number(d));
             }
 
@@ -132,6 +133,7 @@ const CourseDetail = ({daysComponent, day}) => {
                 updateActiveStatus('');
                 updateActiveLectureEndTime(null);
                 updateNextClassTiming (classTime._3rd[0]);
+                updateActiveLinkStatus(false);
                 // updateNextTimeOut(Number(nextClassTiming ) - Number(d));
             }
 
@@ -150,6 +152,7 @@ const CourseDetail = ({daysComponent, day}) => {
                 updateActiveStatus('');
                 updateActiveLectureEndTime(null);
                 updateNextClassTiming (classTime._4th[0]);
+                updateActiveLinkStatus(false);
                 // updateNextTimeOut(Number(nextClassTiming ) - Number(d));
             }
 
@@ -168,6 +171,7 @@ const CourseDetail = ({daysComponent, day}) => {
                 updateActiveStatus('');
                 updateActiveLectureEndTime(null);
                 updateNextClassTiming (classTime._5th[0]);
+                updateActiveLinkStatus(false);
                 // updateNextTimeOut(Number(nextClassTiming ) - Number(d));
             } 
             
@@ -186,6 +190,7 @@ const CourseDetail = ({daysComponent, day}) => {
                 updateActiveStatus('');
                 updateActiveLectureEndTime(null);
                 updateNextClassTiming (classTime._6th[0]);
+                updateActiveLinkStatus(false);
                 // updateNextTimeOut(Number(nextClassTiming ) - Number(d));
             } 
             
@@ -204,6 +209,7 @@ const CourseDetail = ({daysComponent, day}) => {
                 updateActiveStatus('');
                 updateActiveLectureEndTime(null);
                 updateNextClassTiming (classTime._7th[0]);
+                updateActiveLinkStatus(false);
                 // updateNextTimeOut(Number(nextClassTiming ) - Number(d));
             } 
             
@@ -222,6 +228,7 @@ const CourseDetail = ({daysComponent, day}) => {
                 updateActiveStatus('');
                 updateActiveLectureEndTime(null);
                 updateNextClassTiming(classTime._8th[0]);
+                updateActiveLinkStatus(false);
                 // updateNextTimeOut(Number(nextClassTiming ) - Number(d));
             } 
             
@@ -248,6 +255,7 @@ const CourseDetail = ({daysComponent, day}) => {
                 updateActiveLectureNo(null);
                 updateActiveStatus('');
                 updateActiveLectureEndTime(null);
+                updateActiveLinkStatus(false);
                 
                 if(day == 6)
                 updateNextClassTiming(classTime._3rd[0])
@@ -349,11 +357,9 @@ const CourseDetail = ({daysComponent, day}) => {
             return elem.teacherCode == name.teacherCode;
         });
 
-        if((elem.id === activeLectureNo) && activeLinkStatus) {
+        if((elem.id === activeLectureNo) && !activeLinkStatus) {
             window.open(courseName[0].link)
             updateActiveLinkStatus(true);
-        } else {
-            updateActiveLinkStatus(false);
         }
 
         return(
