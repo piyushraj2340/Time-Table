@@ -7,7 +7,7 @@ import Tuesday from './API/Tuesday';
 import Wednesday from './API/Wednesday';
 import Thursday from './API/Thursday';
 import Friday from './API/Friday';
-import Saturday from './API/Saturday';
+// import Saturday from './API/Saturday';
 
 const TimeTable = () => {
     return(
@@ -64,14 +64,14 @@ const TimeTable = () => {
                     <CourseDetail daysComponent={Friday} day={5}/>
                     </div>
                 </div>
-                <div className='saturday flex-vertical'>
+                {/* <div className='saturday flex-vertical'>
                     <div className='time-table-title'>
                         <span className='txt-strong'>Saturday</span>
                     </div>
                     <div className='time-table-content'>
                     <CourseDetail daysComponent={Saturday} day={6}/>
                     </div>
-                </div>
+                </div> */}
             </div>
         </div>
     );

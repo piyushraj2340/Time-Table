@@ -1,27 +1,30 @@
 const Friday = [
     {
         id : 0,
-        teacherCode: 'E12391',
-        courseCode : '20CST-254',
-        section : '20BCS-612-All',
+        teacherCode: 'E12244',
+        courseCode : '20CST-252',
+        section : 'PH20BCS-611-ALL',
+        room: '308'
     },
     {
         id : 1,
-        teacherCode: 'E12244',
-        courseCode : '20CST-252',
-        section : '20BCS-612-All',
+        teacherCode: 'E11390',
+        courseCode : '20SMT-275',
+        section : 'PH20BCS-611-ALL',
+        room: '308'
     },
     {
         id : 2,
-        teacherCode: 'E12293',
-        courseCode : '20CSY-251',
-        section : '20BCS-612-All',
+        teacherCode: 'E8752',
+        courseCode : '20CST-258',
+        section : 'PH20BCS-611-ALL',
+        room: '308'
     },
     {
         id : 3,
-        teacherCode: 'E11360',
-        courseCode : '20SMT-275',
-        section : '20BCS-612-All',
+        teacherCode: '',
+        courseCode : '',
+        section : '',
     },
     {
         id : 4,
@@ -31,21 +34,23 @@ const Friday = [
     },
     {
         id : 5,
-        teacherCode: 'E11360',
-        courseCode : '20SMT-275',
-        section : '20BCS-612-A',
+        teacherCode: 'E12247',
+        courseCode : '20CSP-259',
+        section : 'PH20BCS-611-B',
+        room: '111'
     },
     {
         id : 6,
-        teacherCode: 'E10410',
+        teacherCode: 'E12247',
         courseCode : '20CSP-259',
-        section : '20BCS-612-A',
+        section : 'PH20BCS-611-B',
+        room: '111'
     },
     {
         id : 7,
-        teacherCode: 'E10410',
-        courseCode : '20CSP-259',
-        section : '20BCS-612-A',
+        teacherCode: '',
+        courseCode : '',
+        section : '',
     }
 ];
 export default Friday;

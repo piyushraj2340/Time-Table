@@ -1,51 +1,59 @@
 const Thursday = [
     {
         id : 0,
-        teacherCode: 'E12244',
-        courseCode : '20CST-252',
-        section : '20BCS-612-All',
+        teacherCode: 'E12384',
+        courseCode : '20CSP-255',
+        section : 'PH20BCS-611-B',
+        room: '113-A'
     },
     {
         id : 1,
-        teacherCode: 'E11360',
-        courseCode : '20SMT-275',
-        section : '20BCS-612-All',
+        teacherCode: 'E12384',
+        courseCode : '20CSP-255',
+        section : 'PH20BCS-611-B',
+        room: '113-A'
     },
     {
         id : 2,
         teacherCode: 'E11809',
         courseCode : '20CST-256',
-        section : '20BCS-612-All',
+        section : 'PH20BCS-611-ALL',
+        room: '306'
     },
     {
         id : 3,
-        teacherCode: 'E10410',
-        courseCode : '20CST-258',
-        section : '20BCS-612-All',
-    },
-    {
-        id : 4,
         teacherCode: '',
         courseCode : '',
         section : '',
+        room: ''
+    },
+    {
+        id : 4,
+        teacherCode: 'E11390',
+        courseCode : '20SMT-275',
+        section : 'PH20BCS-611-B',
+        room: '405'
     },
     {
         id : 5,
-        teacherCode: 'E12391',
-        courseCode : '20CST-254',
-        section : '20BCS-612-All',
+        teacherCode: '',
+        courseCode : '',
+        section : '',
+        room: ''
     },
     {
         id : 6,
         teacherCode: '',
         courseCode : '',
         section : '',
+        room: ''
     },
     {
         id : 7,
         teacherCode: '',
         courseCode : '',
         section : '',
+        room: ''
     }
 ];
 export default Thursday;

@@ -6,13 +6,13 @@ const Teachers = [
     },
     {
         id: 1,
-        teacherCode: 'E12293',
-        teacherName: 'Seema Gulati'
+        teacherCode: 'E11284',
+        teacherName: 'Ebin P M'
     },
     {
         id: 2,
-        teacherCode: 'E12273',
-        teacherName: 'Parul Parihar'
+        teacherCode: 'E8752',
+        teacherName: 'Sanjeev Kumar'
     },
     {
         id: 3,
@@ -21,23 +21,23 @@ const Teachers = [
     },
     {
         id: 4,
-        teacherCode: 'E10410',
-        teacherName: 'Gurpreet Kaur'
+        teacherCode: 'E11390',
+        teacherName: 'Ria Gupta'
     },
     {
         id: 5,
-        teacherCode: 'E11360',
-        teacherName: 'Vijay Kumar Kaushik'
+        teacherCode: 'E12247',
+        teacherName: 'Gyan Chand Yadav'
     },
     {
         id: 6,
-        teacherCode: 'E12258',
-        teacherName: 'Kiranjeet Kaur Sandhu'
+        teacherCode: 'E10039',
+        teacherName: 'Niket Kumar Tiwari'
     },
     {
         id: 7,
-        teacherCode: 'E11687',
-        teacherName: 'Neeraj Kaushal'
+        teacherCode: 'E12384',
+        teacherName: 'Abdul Hafiz'
     },
     {
         id: 8,
